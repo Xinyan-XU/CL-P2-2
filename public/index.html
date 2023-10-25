@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Flick Favorites</title>
+</head>
+
+<body>
+
+    <div class="header_section">
+        <p>What flicks have you watched recently?</p>
+        <div class="name_section">
+            <!-- flick name input -->
+            <p class="words">just watched: </p>
+            <input id="flick_name" type="text" />
+
+            <!-- flick rate select -->
+            <p class="words">rate it out of 5: </p>
+            <select id="flick_rating">
+                <option value="/"> </option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <!-- upload button for data -->
+            <button id="button_rating">recommend</button>
+        </div>
+    </div>
+
+    <!-- get flick recommendations -->
+    <div class="flick_section">
+        <button id="flick_rec">peek into most recent flick list with rating</button>
+        <div id="flick_info"></div>
+    </div>
+
+    <!-- link js file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
